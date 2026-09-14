@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vitor Pizzaria - pizzas artesanais, combos e muito sabor." />
+  <title>Vitor Pizzaria | Sabor em cada fatia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio"><span class="brand-mark">🍕</span><span>Vitor <b>Pizzaria</b></span></a>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#promocoes">Promoções</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrinho">🛒 <span>Carrinho</span><strong id="cartCount">0</strong></button>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow">🔥 FEITA PARA MATAR SUA FOME</div>
+        <h1>A pizza que transforma sua fome em <em>felicidade.</em></h1>
+        <p>Pizzas artesanais, ingredientes selecionados e muito sabor para deixar seu momento ainda melhor.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cardapio">Ver cardápio <span>→</span></a>
+          <button class="button secondary" id="heroOrder">Montar meu pedido</button>
+        </div>
+        <div class="hero-benefits">
+          <span>✓ Massa artesanal</span><span>✓ Ingredientes selecionados</span><span>✓ Feita na hora</span>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-glow"></div>
+        <img class="hero-pizza" src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85" alt="Pizza artesanal com queijo derretido">
+        <div class="floating-card"><span class="floating-icon">⭐</span><div><b>4.9/5</b><small>Clientes satisfeitos</small></div></div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><span>🍅</span><div><b>Ingredientes frescos</b><small>Qualidade em cada detalhe</small></div></div>
+      <div><span>🔥</span><div><b>Assada na hora</b><small>Quentinha e saborosa</small></div></div>
+      <div><span>🚴</span><div><b>Entrega especial</b><small>Seu pedido com cuidado</small></div></div>
+      <div><span>💛</span><div><b>Feita com carinho</b><small>Para você aproveitar</small></div></div>
+    </section>
+
+    <section class="section menu-section" id="cardapio">
+      <div class="section-heading">
+        <div><span class="eyebrow">NOSSO CARDÁPIO</span><h2>Escolha seu próximo <em>pedaço.</em></h2></div>
+        <p>Sabores clássicos e combinações especiais para todos os gostos.</p>
+      </div>
+      <div class="menu-toolbar">
+        <div class="categories" id="categories">
+          <button class="category active" data-category="Todos">Todos</button>
+          <button class="category" data-category="Tradicionais">Tradicionais</button>
+          <button class="category" data-category="Especiais">Especiais</button>
+          <button class="category" data-category="Premium">Premium</button>
+          <button class="category" data-category="Doces">Doces</button>
+          <button class="category" data-category="Bebidas">Bebidas</button>
+          <button class="category" data-category="Combos">Combos</button>
+        </div>
+        <label class="search-box">⌕ <input id="searchInput" type="search" placeholder="Buscar no cardápio..." /></label>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="empty-state hidden" id="emptyState">Nenhum produto encontrado. Tente outro sabor.</div>
+    </section>
+
+    <section class="promo-section" id="promocoes">
+      <div class="promo-copy"><span class="eyebrow">OFERTAS DA CASA</span><h2>Seu momento merece uma <em>promoção.</em></h2><p>Confira nossas combinações especiais e aproveite mais sabor por um preço especial.</p><a class="button light" href="#cardapio">Ver ofertas →</a></div>
+      <div class="promo-card"><span class="promo-tag">COMBO FAMÍLIA</span><h3>Pizza grande + bebida + sobremesa</h3><p>Uma combinação completa para compartilhar.</p><div><strong>R$ 79,90</strong><button class="button small light" data-add="combo-familia">Adicionar</button></div></div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85" alt="Pizza artesanal sobre uma mesa"></div>
+      <div class="about-copy"><span class="eyebrow">SOBRE A VITOR PIZZARIA</span><h2>Mais que pizza. Uma experiência de <em>sabor.</em></h2><p>Na Vitor Pizzaria, cada pizza é preparada com ingredientes selecionados, massa saborosa e aquele cuidado especial que faz cada pedido ser inesquecível.</p><div class="about-list"><span>✓ Massa preparada com cuidado</span><span>✓ Ingredientes selecionados</span><span>✓ Sabor em cada fatia</span></div><a class="button primary" href="#contato">Conheça nossa casa →</a></div>
+    </section>
+
+    <section class="reviews section">
+      <div class="section-heading centered"><span class="eyebrow">QUEM PROVA, APROVA</span><h2>O sabor fala por si.</h2></div>
+      <div class="reviews-grid">
+        <article class="review"><div class="stars">★★★★★</div><p>“Pizza muito saborosa e chegou quentinha. A massa é excelente!”</p><b>Mariana</b><small>Cliente demonstrativa</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“O atendimento foi ótimo e o combo família vale muito a pena.”</p><b>Lucas</b><small>Cliente demonstrativo</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“A pizza doce de chocolate virou minha favorita. Recomendo!”</p><b>Fernanda</b><small>Cliente demonstrativa</small></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div><span class="eyebrow">FALE COM A GENTE</span><h2>Seu próximo pedido começa aqui. 🍕</h2><p>Estamos prontos para preparar algo delicioso para você.</p></div>
+      <div class="contact-info"><p>📍 Rua Principal, 100 — Centro, Urussanga - SC</p><p>🕒 Terça a domingo: 18h às 23h</p><p>📸 @vitor_pizzaria</p><a class="button light" id="contactWhatsapp" href="#">Pedir pelo WhatsApp →</a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><a class="brand" href="#inicio"><span class="brand-mark">🍕</span><span>Vitor <b>Pizzaria</b></span></a><p>Seu momento merece uma pizza especial.</p></div>
+    <div class="footer-links"><b>Navegação</b><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#promocoes">Promoções</a></div>
+    <div class="footer-links"><b>Redes sociais</b><a href="https://instagram.com/vitor_pizzaria" target="_blank">@vitor_pizzaria</a><a href="https://facebook.com/vitor_pizzaria" target="_blank">Facebook</a><a href="https://tiktok.com/@vitor_pizzaria" target="_blank">TikTok</a></div>
+    <div class="footer-links"><b>Atendimento</b><span>Terça a domingo</span><span>18h às 23h</span><span>Preços demonstrativos</span></div>
+    <div class="copyright">© 2026 Vitor Pizzaria. Todos os direitos reservados.</div>
+  </footer>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header"><h2>Seu carrinho</h2><button id="closeCart">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="summary-row"><span>Subtotal</span><b id="cartSubtotal">R$ 0,00</b></div><div class="summary-row"><span>Entrega</span><b id="deliveryFee">R$ 5,00</b></div><div class="summary-row total"><span>Total</span><b id="cartTotal">R$ 5,00</b></div><button class="button primary full" id="checkoutButton">Finalizar pedido</button><button class="text-button" id="clearCart">Limpar carrinho</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal-backdrop" id="productModal">
+    <div class="modal"><button class="modal-close" data-close-modal>✕</button><img id="modalImage" src="" alt=""><div class="modal-body"><span class="eyebrow" id="modalCategory"></span><h2 id="modalName"></h2><p id="modalDescription"></p><div class="size-label">Escolha o tamanho:</div><div class="size-options" id="sizeOptions"></div><label class="notes-label">Observações <textarea id="modalNotes" placeholder="Ex.: retirar cebola..."></textarea></label><div class="modal-bottom"><strong id="modalPrice"></strong><button class="button primary" id="modalAdd">Adicionar ao carrinho</button></div></div></div>
+  </div>
+
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal checkout-modal"><button class="modal-close" data-close-modal>✕</button><div class="modal-body"><span class="eyebrow">ÚLTIMA ETAPA</span><h2>Finalizar pedido</h2><p>Preencha seus dados para montar a mensagem do WhatsApp.</p><form id="checkoutForm"><div class="form-grid"><label>Nome<input required name="name" placeholder="Seu nome"></label><label>Telefone<input required name="phone" placeholder="(00) 00000-0000"></label></div><label>Endereço<input required name="address" placeholder="Rua, número e bairro"></label><div class="form-grid"><label>Pagamento<select name="payment"><option>Pix</option><option>Dinheiro</option><option>Cartão de crédito</option><option>Cartão de débito</option></select></label><label>Troco para (opcional)<input name="change" placeholder="R$ 0,00"></label></div><label>Observações<textarea name="notes" placeholder="Alguma observação sobre o pedido?"></textarea></label><button class="button primary full" type="submit">Enviar pedido pelo WhatsApp</button></form></div></div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
