@@ -2,7 +2,7 @@ const WHATSAPP_NUMBER = "5548999999999"; // Troque pelo número real: 55 + DDD +
 
 const products = [
   {id:"mussarela",name:"Mussarela",category:"Tradicionais",description:"Molho de tomate, mussarela, orégano e azeitonas.",price:39.90,image:"https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"},
-  {id:"calabresa",name:"Calabresa",category:"Tradicionais",description:"Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.",price:42.90,image:"https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=700&q=80"},
+  {id:"calabresa",name:"Calabresa",category:"Tradicionais",description:"Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.",price:42.90,image:"pizza-calabresa.jpg"},
   {id:"frango",name:"Frango com Catupiry",category:"Tradicionais",description:"Frango desfiado temperado, mussarela e creme de Catupiry.",price:46.90,image:"https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=700&q=80"},
   {id:"portuguesa",name:"Portuguesa",category:"Tradicionais",description:"Presunto, ovos, cebola, ervilha, milho, mussarela e azeitonas.",price:47.90,image:"https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80"},
   {id:"marguerita",name:"Marguerita",category:"Tradicionais",description:"Mussarela, tomate, manjericão fresco e azeite.",price:44.90,image:"https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"},
